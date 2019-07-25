@@ -1,0 +1,383 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap");
+.p0 {
+  padding: 0;
+}
+
+.prl-5 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'sans-serif';
+  scroll-behavior: smooth;
+  background: #F8F8F8;
+}
+
+.g-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.product-section {
+  margin: 10vh 0;
+  background-color: #FFF;
+  padding: 2rem;
+}
+
+.table-product {
+  width: 100%;
+}
+
+.table-product thead {
+  border-bottom: 1px solid #F8F8F8;
+}
+
+.table-product tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table-product tr th {
+  font-size: 12px;
+  min-width: 5rem;
+}
+
+.table-product tr th, .table-product tr td {
+  text-transform: capitalize;
+  min-width: 5rem;
+  text-align: left;
+}
+
+.table-product .product-name {
+  font-size: 1em;
+}
+
+.table-product .product-type {
+  font-size: .875em;
+}
+
+.table-product .risk-level {
+  font-size: .813em;
+}
+
+.table-product .risk-level.low::before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  background: #18D795;
+  border-radius: 50%;
+  border: 0;
+  display: inline-block;
+}
+
+.table-product .risk-level.medium::before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  background: #ddf32e;
+  border-radius: 50%;
+  border: 0;
+  display: inline-block;
+}
+
+.table-product .risk-level.high::before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  background: #f32e2e;
+  border-radius: 50%;
+  border: 0;
+  display: inline-block;
+}
+
+.table-product .percentage-year {
+  font-size: 1em;
+}
+
+.table-product .aum {
+  font-size: .875em;
+}
+
+.btn-primary-solid {
+  border-radius: 5px;
+  border: 1px solid #282d49;
+  background-color: #282d49;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.btn-primary-solid:hover {
+  background-color: #161928;
+  color: #FFF;
+}
+
+.btn-primary-solid.btn-buy {
+  width: 100%;
+  display: block;
+  font-size: .813em;
+  text-transform: uppercase;
+}
+
+.btn-primary-outline {
+  border-radius: 5px;
+  border: 1px solid #282d49;
+  background-color: transparent;
+  color: #282d49;
+  font-weight: bold;
+}
+
+.btn-primary-outline:hover {
+  background-color: #e6e6e6;
+  color: #282d49;
+}
+
+.btn-primary-outline.btn-compare {
+  width: 100%;
+  display: block;
+  font-size: .813em;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: #FFF;
+  padding: 1.5em 0;
+  -webkit-box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+header a {
+  color: #282d49;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li a {
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: .75em;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #282d49;
+}
+
+header nav ul li.active a {
+  color: #282d49;
+}
+
+header nav ul li.last-menu > a {
+  color: #FFF;
+  background: #282d49;
+  padding: .75em 1.5em;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+header nav ul li.last-menu > a:hover {
+  background: #161928;
+}
+
+table {
+  width: 100%;
+}
+
+.logo-wrapper {
+  width: 45px;
+  height: 45px;
+  background-color: #F8F8F8;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo-wrapper .img-mngr {
+  max-width: 45px;
+  max-height: 45px;
+  position: absolute;
+}
+
+.construction-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.construction-wrapper img {
+  height: 25rem;
+}
+
+.construction-wrapper h2 {
+  font-weight: bold;
+}
+
+.mobile-burger-menu {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+footer {
+  background: #282d49;
+  width: 100%;
+  padding: 5rem 0rem 6rem 0rem;
+  color: #FFF;
+}
+
+.flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flx .desc {
+  width: 30%;
+  padding: 0px 10px;
+  line-height: 27px;
+}
+
+.flx .desc h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.flx .nav-footer {
+  width: 15%;
+  padding: 0px 10px;
+}
+
+.flx .nav-footer ul li p.footer-title {
+  font-weight: bold;
+}
+
+.flx .nav-footer ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.flx .nav-footer ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.flx .nav-footer ul li a:hover {
+  color: #e6e6e6;
+}
+
+.flx .nav-footer-last {
+  max-width: 40%;
+  padding: 0px 10px;
+}
+
+.flx .nav-footer-last ul li p.footer-title {
+  font-weight: bold;
+}
+
+.flx .nav-footer-last ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.flx .nav-footer-last ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.flx .nav-footer-last ul li a:hover {
+  color: #e6e6e6;
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    display: none;
+  }
+  a.mobile-burger-menu {
+    float: right;
+    display: block;
+    color: #282d49;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive nav ul li a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */

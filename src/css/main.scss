@@ -1,0 +1,368 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap');
+
+$primary:  #282d49;
+$black:  #223242;
+
+.p0 {
+    padding: 0;
+}
+
+.prl-5 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    scroll-behavior: smooth;
+    background: #F8F8F8;
+}
+
+.g-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.product-section {
+    margin: 10vh 0; 
+    background-color: #FFF;
+    padding: 2rem;
+}
+
+.table-product {
+    width: 100%;
+    thead {
+        border-bottom: 1px solid #F8F8F8; 
+    }
+
+    tr {
+        display: flex;
+        justify-content: space-between;
+        
+        th {
+            font-size: 12px;
+            min-width: 5rem;
+        }
+
+        th, td {
+            text-transform: capitalize;
+            min-width: 5rem;
+            text-align: left;
+        }
+    }
+
+    .product-name {
+        font-size: 1em;
+    }
+    
+    .product-type {
+        font-size: .875em;
+    }
+
+    .risk-level {
+        font-size: .813em;
+    }
+
+    .risk-level.low::before {
+            content: ' ';
+            width: 10px;
+            height: 10px;
+            background: #18D795;
+            border-radius: 50%;
+            border: 0;
+            display: inline-block;
+    }
+
+    .risk-level.medium::before {
+            content: ' ';
+            width: 10px;
+            height: 10px;
+            background: #ddf32e;
+            border-radius: 50%;
+            border: 0;
+            display: inline-block;
+    }
+
+    .risk-level.high::before {
+            content: ' ';
+            width: 10px;
+            height: 10px;
+            background: #f32e2e;
+            border-radius: 50%;
+            border: 0;
+            display: inline-block;
+    }
+
+    .percentage-year {
+        font-size: 1em;
+    }
+
+    .aum {
+        font-size: .875em;
+    }
+}
+
+
+.btn-primary-solid {
+    border-radius: 5px;
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: #FFF;
+    font-weight: bold;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+        color: #FFF;
+    }
+}
+
+.btn-primary-solid.btn-buy {
+    width: 100%;
+    display: block;
+    font-size: .813em;
+    text-transform: uppercase;
+}
+
+.btn-primary-outline {
+    border-radius: 5px;
+    border: 1px solid $primary;
+    background-color: transparent;
+    color: $primary;
+    font-weight: bold;
+
+    &:hover {
+        background-color: darken(#FFF, 10%);
+        color: $primary;
+    }
+}
+
+.btn-primary-outline.btn-compare {
+    width: 100%;
+    display: block;
+    font-size: .813em;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #FFF;
+    padding: 1.5em 0;
+    -webkit-box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    a {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    a.logo {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1em; 
+                text-transform: uppercase;
+                font-size: .75em;
+                font-weight: bold;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            li.active a {
+                color: $primary;
+            }
+
+            li.last-menu > a {
+                color: #FFF;
+                background: $primary;
+                padding: .75em 1.5em;
+                border-radius: 5px;
+                font-weight: 600;
+                margin-left: 10px;
+
+                &:hover {
+                    background: darken($primary, 10%);
+                }
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+}
+
+.logo-wrapper {
+    width: 45px;
+    height: 45px;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    position: relative;
+
+    .img-mngr {
+        max-width: 45px;
+        max-height: 45px;
+        position: absolute;
+    }
+
+}
+
+.construction-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 25rem;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.mobile-burger-menu {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+footer {
+    background: $primary;
+    width: 100%;
+    padding: 5rem 0rem 6rem 0rem;;
+    color: #FFF;
+}
+
+.flx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // justify-content: center;
+
+    .desc {
+        width: 30%;
+        padding: 0px 10px;
+        line-height: 27px;
+
+        h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .nav-footer {
+        width: 15%;
+        padding: 0px 10px;
+
+        ul li p.footer-title {
+            font-weight: bold;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        ul li a {
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #FFF;
+
+            &:hover {
+                color: darken(#FFF, 10%);
+            }
+        }
+    }
+
+    .nav-footer-last {
+        max-width: 40%;
+        padding: 0px 10px;
+
+        ul li p.footer-title {
+            font-weight: bold;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        ul li a {
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #FFF;
+
+            &:hover {
+                color: darken(#FFF, 10%);
+            }
+        }
+    }
+}
+@media screen and (min-width: 1920px){
+    .container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav ul li a {
+        display: none;
+    }
+
+    a.mobile-burger-menu {
+        float: right;
+        display: block;
+        color: $primary;
+        user-select: none;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive nav ul li a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
