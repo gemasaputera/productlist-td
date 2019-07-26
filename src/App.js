@@ -9,15 +9,18 @@ import Footer from './components/layouts/Footer';
 import ProductList from './components/product-list/ProductList';
 import Construction from './components/Construction';
 
-function App() {
-  return (
-    <Router>
-      <Header />
-        <Route exact path="/" component={ProductList} />
-        <Route path="/cons" component={Construction} />
-      <Footer />
-    </Router>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <Router>
+        <Header />
+          <Route exact path="/" component={ProductList} />
+          <Route path="/cons" component={Construction} />
+        <Footer />
+      </Router>
+    );
+  }
 }
 
 export default App;

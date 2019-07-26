@@ -5,16 +5,20 @@
 }
 
 .prl-5 {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 5px !important;
+  padding-left: 5px !important;
 }
 
 .mb-10 {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 
 .mt-10 {
-  margin-top: 10px;
+  margin-top: 10px !important;
+}
+
+.f_white {
+  color: #FFF !important;
 }
 
 body {
@@ -71,40 +75,6 @@ body {
   font-size: .875em;
 }
 
-.table-product .risk-level {
-  font-size: .813em;
-}
-
-.table-product .risk-level.low::before {
-  content: ' ';
-  width: 10px;
-  height: 10px;
-  background: #18D795;
-  border-radius: 50%;
-  border: 0;
-  display: inline-block;
-}
-
-.table-product .risk-level.medium::before {
-  content: ' ';
-  width: 10px;
-  height: 10px;
-  background: #ddf32e;
-  border-radius: 50%;
-  border: 0;
-  display: inline-block;
-}
-
-.table-product .risk-level.high::before {
-  content: ' ';
-  width: 10px;
-  height: 10px;
-  background: #f32e2e;
-  border-radius: 50%;
-  border: 0;
-  display: inline-block;
-}
-
 .table-product .percentage-year {
   font-size: 1em;
 }
@@ -123,6 +93,11 @@ body {
 
 .btn-primary-solid:hover {
   background-color: #161928;
+  color: #FFF;
+}
+
+button.btn-primary-solid > a {
+  text-decoration: none;
   color: #FFF;
 }
 
@@ -243,6 +218,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 40rem;
 }
 
 .construction-wrapper img {
@@ -272,8 +248,51 @@ h6 {
 footer {
   background: #282d49;
   width: 100%;
-  padding: 5rem 0rem 6rem 0rem;
+  padding: 5rem 0rem 8.75rem 0rem;
   color: #FFF;
+}
+
+.compare-wrapper {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.compare-section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 2px solid #282d49;
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px -3px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.compare-section .compare-title {
+  color: #485393;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.compare-item {
+  border: 1px solid #E8E8E8;
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #FFF;
+  padding: .5rem;
+  text-align: center;
+}
+
+.compare-item img {
+  margin: 0 auto;
+  width: 50px;
+  display: block;
+}
+
+.compare-item .title-product-compare {
+  font-size: .75em;
+  color: #223242;
 }
 
 .flx {

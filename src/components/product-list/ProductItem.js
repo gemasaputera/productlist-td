@@ -1,7 +1,22 @@
-import React, { Component } from 'react'
-import Item from './Item'
+import React, { Component } from 'react';
+import Items from './Items';
+import Axios from 'axios';
 
 export default class ProductItem extends Component {
+    state = {
+        items: []
+    }
+
+    componentDidMount() {
+        Axios.get("http://www.mocky.io/v2/5d39331d9f0000e74a9b41ff")
+            .then(res => this.setState({ items: res.data.data.productList }))
+    }
+
+    // riskTypeCheck
+    riskCondition = (idProduct) => {
+        
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -18,10 +33,11 @@ export default class ProductItem extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <Item />
-                        <Item />
+                        <Items 
+                            items={this.state.items}
+                            />
                     </tbody>
-                </table>
+                </table>    
             </React.Fragment>
         );
     }
